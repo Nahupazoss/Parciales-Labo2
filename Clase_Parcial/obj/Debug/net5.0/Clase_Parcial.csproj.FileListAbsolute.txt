@@ -1,0 +1,12 @@
+C:\Users\Rodri\source\repos\Clase_Parcial\bin\Debug\net5.0\Clase_Parcial.deps.json
+C:\Users\Rodri\source\repos\Clase_Parcial\bin\Debug\net5.0\Clase_Parcial.dll
+C:\Users\Rodri\source\repos\Clase_Parcial\bin\Debug\net5.0\ref\Clase_Parcial.dll
+C:\Users\Rodri\source\repos\Clase_Parcial\bin\Debug\net5.0\Clase_Parcial.pdb
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.csproj.AssemblyReference.cache
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.AssemblyInfoInputs.cache
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.AssemblyInfo.cs
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.csproj.CoreCompileInputs.cache
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.dll
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\ref\Clase_Parcial.dll
+C:\Users\Rodri\source\repos\Clase_Parcial\obj\Debug\net5.0\Clase_Parcial.pdb
