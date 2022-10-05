@@ -2,4 +2,6 @@
 Parciales del 2do cuatrimestre laboratorio 2 UTN
 
 
-Nahuel Rodrigo Pazos 2A
+Alumno: Nahuel Rodrigo Pazos                 
+Profesor: Maximiliano Neiner
+Curso: 2A
