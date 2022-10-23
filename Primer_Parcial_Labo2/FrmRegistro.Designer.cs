@@ -45,6 +45,12 @@ namespace Primer_Parcial_Labo2
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_Apellido = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_Edad = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Dni = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -58,32 +64,30 @@ namespace Primer_Parcial_Labo2
             this.txt_usuario.BackColor = System.Drawing.Color.Black;
             this.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_usuario.Location = new System.Drawing.Point(498, 145);
+            this.txt_usuario.Location = new System.Drawing.Point(498, 204);
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.PlaceholderText = "USUARIO";
             this.txt_usuario.Size = new System.Drawing.Size(352, 16);
             this.txt_usuario.TabIndex = 0;
-            this.txt_usuario.TextChanged += new System.EventHandler(this.txt_usuario_TextChanged);
             // 
             // txt_pass
             // 
             this.txt_pass.BackColor = System.Drawing.Color.Black;
             this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_pass.Location = new System.Drawing.Point(498, 195);
+            this.txt_pass.Location = new System.Drawing.Point(498, 233);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PlaceholderText = "PASSWORD";
             this.txt_pass.Size = new System.Drawing.Size(352, 16);
             this.txt_pass.TabIndex = 1;
             this.txt_pass.UseSystemPasswordChar = true;
-            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label1.Location = new System.Drawing.Point(534, 39);
+            this.label1.Location = new System.Drawing.Point(543, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 35);
             this.label1.TabIndex = 7;
@@ -92,7 +96,7 @@ namespace Primer_Parcial_Labo2
             // btn_Registro
             // 
             this.btn_Registro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Registro.Location = new System.Drawing.Point(498, 250);
+            this.btn_Registro.Location = new System.Drawing.Point(498, 271);
             this.btn_Registro.Name = "btn_Registro";
             this.btn_Registro.Size = new System.Drawing.Size(352, 35);
             this.btn_Registro.TabIndex = 8;
@@ -115,12 +119,11 @@ namespace Primer_Parcial_Labo2
             this.txt_nombre.BackColor = System.Drawing.Color.Black;
             this.txt_nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_nombre.Location = new System.Drawing.Point(498, 103);
+            this.txt_nombre.Location = new System.Drawing.Point(498, 74);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.PlaceholderText = "NOMBRE";
             this.txt_nombre.Size = new System.Drawing.Size(352, 16);
             this.txt_nombre.TabIndex = 11;
-            this.txt_nombre.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
             // 
             // pictureBox2
             // 
@@ -162,7 +165,7 @@ namespace Primer_Parcial_Labo2
             // 
             this.lbl_msjError.AutoSize = true;
             this.lbl_msjError.ForeColor = System.Drawing.Color.Red;
-            this.lbl_msjError.Location = new System.Drawing.Point(514, 74);
+            this.lbl_msjError.Location = new System.Drawing.Point(523, 32);
             this.lbl_msjError.Name = "lbl_msjError";
             this.lbl_msjError.Size = new System.Drawing.Size(327, 15);
             this.lbl_msjError.TabIndex = 15;
@@ -196,7 +199,7 @@ namespace Primer_Parcial_Labo2
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label4.Location = new System.Drawing.Point(498, 195);
+            this.label4.Location = new System.Drawing.Point(498, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(366, 35);
             this.label4.TabIndex = 42;
@@ -208,7 +211,7 @@ namespace Primer_Parcial_Labo2
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label2.Location = new System.Drawing.Point(498, 145);
+            this.label2.Location = new System.Drawing.Point(498, 195);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(366, 35);
             this.label2.TabIndex = 43;
@@ -220,11 +223,82 @@ namespace Primer_Parcial_Labo2
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label3.Location = new System.Drawing.Point(498, 103);
+            this.label3.Location = new System.Drawing.Point(498, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(366, 35);
             this.label3.TabIndex = 44;
             this.label3.Text = "___________________________";
+            // 
+            // txt_Apellido
+            // 
+            this.txt_Apellido.BackColor = System.Drawing.Color.Black;
+            this.txt_Apellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Apellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_Apellido.Location = new System.Drawing.Point(498, 102);
+            this.txt_Apellido.Name = "txt_Apellido";
+            this.txt_Apellido.PlaceholderText = "APELLIDO";
+            this.txt_Apellido.Size = new System.Drawing.Size(352, 16);
+            this.txt_Apellido.TabIndex = 45;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label5.Location = new System.Drawing.Point(498, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(366, 35);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "___________________________";
+            // 
+            // txt_Edad
+            // 
+            this.txt_Edad.BackColor = System.Drawing.Color.Black;
+            this.txt_Edad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Edad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_Edad.Location = new System.Drawing.Point(498, 132);
+            this.txt_Edad.Name = "txt_Edad";
+            this.txt_Edad.PlaceholderText = "EDAD";
+            this.txt_Edad.Size = new System.Drawing.Size(352, 16);
+            this.txt_Edad.TabIndex = 47;
+            this.txt_Edad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Edad_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label6.Location = new System.Drawing.Point(498, 123);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(366, 35);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "___________________________";
+            // 
+            // txt_Dni
+            // 
+            this.txt_Dni.BackColor = System.Drawing.Color.Black;
+            this.txt_Dni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Dni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_Dni.Location = new System.Drawing.Point(498, 160);
+            this.txt_Dni.Name = "txt_Dni";
+            this.txt_Dni.PlaceholderText = "DNI";
+            this.txt_Dni.Size = new System.Drawing.Size(352, 16);
+            this.txt_Dni.TabIndex = 49;
+            this.txt_Dni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Edad_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Himalaya", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label7.Location = new System.Drawing.Point(498, 151);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(366, 35);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "___________________________";
             // 
             // FrmRegistro
             // 
@@ -232,6 +306,13 @@ namespace Primer_Parcial_Labo2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1031, 318);
+            this.Controls.Add(this.txt_Dni);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_Edad);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txt_Apellido);
+            this.Controls.Add(this.lbl_msjError);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_usuario);
@@ -239,7 +320,6 @@ namespace Primer_Parcial_Labo2
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbl_msjError);
             this.Controls.Add(this.btn_Registro);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox1);
@@ -282,5 +362,11 @@ namespace Primer_Parcial_Labo2
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_Apellido;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_Edad;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_Dni;
+        private System.Windows.Forms.Label label7;
     }
 }

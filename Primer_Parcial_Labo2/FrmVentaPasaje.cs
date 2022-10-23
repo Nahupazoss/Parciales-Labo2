@@ -67,9 +67,9 @@ namespace Primer_Parcial_Labo2
                 }
                 else
                 {
-                    nuevoCliente = new Cliente(dni, nomb, apellido, nacionalidad, edad);
+                    nuevoCliente = new Cliente(nomb, apellido, edad, dni, nacionalidad);
                     Sistema.Clientes.Add(nuevoCliente);
-                    MessageBox.Show($"{nomb} es un nuevo cliente!!!");
+                    MessageBox.Show($"{nomb} es un nuevo cliente!!! y su pasaje se vendio con exito");
                     Sistema.Pasajeros.Add(new Pasajero(nuevoCliente, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
                 }
             }
@@ -103,10 +103,6 @@ namespace Primer_Parcial_Labo2
             }
         }
 
-        private static bool ValidarSoloNumeros(KeyPressEventArgs e)
-        {
-            return e.KeyChar >= 32 && e.KeyChar <= 47 || e.KeyChar >= 58 && e.KeyChar <= 255;
-        }
 
         private void txtboxLetras_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -116,6 +112,10 @@ namespace Primer_Parcial_Labo2
                 e.Handled = true;
                 return;
             }
+        }
+        public bool ValidarSoloNumeros(KeyPressEventArgs e)
+        {
+            return e.KeyChar >= 32 && e.KeyChar <= 47 || e.KeyChar >= 58 && e.KeyChar <= 255;
         }
 
         private static bool ValidarSoloLetras(KeyPressEventArgs e)

@@ -27,6 +27,12 @@ namespace Clase_Parcial
         public string Destino { get => viaje.Destino; }
         public DateTime Llegada { get => viaje.Llegada; }
 
-
+        public Cliente Cliente
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

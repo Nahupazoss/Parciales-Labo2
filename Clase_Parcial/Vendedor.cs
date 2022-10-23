@@ -1,16 +1,14 @@
 ﻿namespace Clase_Parcial
 {
-    public class Vendedor
+    public class Vendedor : Persona
     {
         int id;
-        string nombre;
         string usuario;
         string pass;
 
-        public Vendedor(int id, string nombre, string usuario, string pass)
+        public Vendedor(int id, string usuario, string pass, string nombre, string apellido, int edad, int dni) : base(nombre, apellido, edad, dni)
         {
             this.id = id;
-            this.nombre = nombre;
             this.usuario = usuario;
             this.pass = pass;
         }

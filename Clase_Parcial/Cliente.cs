@@ -1,25 +1,14 @@
 ﻿namespace Clase_Parcial
 {
-    public class Cliente
+    public class Cliente : Persona
     {
-        private int dni;
-        private string nombre;
-        private string apellido;
         private string nacionalidad;
-        private int edad;
 
-        public Cliente(int dni, string nombre, string apellido, string nacionalidad, int edad)
+        public Cliente(string nombre, string apellido, int edad, int dni, string nacionalidad) : base(nombre,apellido,edad,dni)
         {
-            this.dni = dni;
-            this.nombre = nombre;
-            this.apellido = apellido;
             this.nacionalidad = nacionalidad;
-            this.edad = edad;
         }
-        public string Nombre { get => nombre;}
-        public string Apellido { get => apellido;}
-        public int Edad { get => edad; }
-        public int Dni { get => dni; }
+
         public string Nacionalidad { get => nacionalidad;}
 
         /*public override bool Equals(object obj)

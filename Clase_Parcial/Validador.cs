@@ -9,6 +9,9 @@ namespace Clase_Parcial
             return !string.IsNullOrEmpty(dato);
         }
 
+
+
+
         /*public static bool ValidarNumeroEntero(int dato)
         {
             bool validar = int.TryParse( "s", out dato);

@@ -20,6 +20,11 @@ namespace Primer_Parcial_Labo2
 
         private void FrmListPasajeros_Load(object sender, EventArgs e)
         {
+            ActualizarDataGrid();
+        }
+
+        public void ActualizarDataGrid()
+        {
             dgtv_ListPasajareos.DataSource = null;
             dgtv_ListPasajareos.DataSource = Sistema.Pasajeros;
         }

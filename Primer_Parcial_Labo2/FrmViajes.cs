@@ -85,6 +85,7 @@ namespace Primer_Parcial_Labo2
 
         private void btn_ListPasajeros_Click(object sender, EventArgs e)
         {
+            listPasajeros.ActualizarDataGrid();
             listPasajeros.Show();
         }
     }

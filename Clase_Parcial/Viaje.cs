@@ -40,9 +40,5 @@ namespace Clase_Parcial
         {
             return crucero;
         }
-
-        
-
-
     }
 }

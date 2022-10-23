@@ -45,17 +45,17 @@ namespace Clase_Parcial
         }
         private static void HarcodeCliente()
         {
-            clientes.Add(new Cliente(45583107, "Nahuel", "Pazos", "Argentino", 19));
-            clientes.Add(new Cliente(24321465, "Nathan", "Sulivan", "Frances", 23));
-            clientes.Add(new Cliente(40213421, "Valery", "Pavlov", "Italiano", 33));
-            clientes.Add(new Cliente(31213451, "Pablo", "Vidal", "Español", 70));
-            clientes.Add(new Cliente(32325145, "Mateo", "Zarza", "Argentino", 55));
-            clientes.Add(new Cliente(22341556, "Juan", "Visini", "Estadounidense", 19));
-            clientes.Add(new Cliente(29312012, "Agustin", "Scali", "Africano", 30));
-            clientes.Add(new Cliente(35234124, "Maria", "Fernanda", "Española", 30));
-            clientes.Add(new Cliente(23901234, "Christian", "Pazos", "Suizo", 30));
-            clientes.Add(new Cliente(43090212, "Nacho", "Gerla", "Ruso", 22));
-            clientes.Add(new Cliente(45021345, "Joaquin", "Orueta", "Español", 24));
+            clientes.Add(new Cliente("Nahuel", "Pazos", 19, 45583107, "Argentino"));
+            clientes.Add(new Cliente("Nathan", "Sulivan", 23, 24321465, "Frances"));
+            clientes.Add(new Cliente("Valery", "Pavlov", 33, 40213421, "Italiano"));
+            clientes.Add(new Cliente("Pablo", "Vidal", 70, 31213451, "Español"));
+            clientes.Add(new Cliente("Mateo", "Zarza", 55, 32325145, "Argentino"));
+            clientes.Add(new Cliente("Juan", "Visini", 19, 22341556, "Estadounidense"));
+            clientes.Add(new Cliente("Agustin", "Scali", 30, 29312012, "Africano"));
+            clientes.Add(new Cliente("Maria", "Fernanda", 30, 35234124, "Española"));
+            clientes.Add(new Cliente("Christian", "Pazos", 30, 23901234, "Suizo"));
+            clientes.Add(new Cliente("Nacho", "Gerla", 27, 43090212, "Ruso"));
+            clientes.Add(new Cliente("Joaquin", "Orueta", 24, 45021345, "Español"));
         }
 
         private static void HarcodeCrucero()
@@ -71,11 +71,9 @@ namespace Clase_Parcial
 
         private static void HardcodeVendedor()
         {
-            vendedores.Add(new Vendedor(1, "Nahuel", "NahuPazos", "123a"));
-            vendedores.Add(new Vendedor(2, "Maximiliano", "Neiner", "123aa"));
-            vendedores.Add(new Vendedor(3, "Manuela", "ManuLagos", "a123"));
-            vendedores.Add(new Vendedor(4, "Jeronimo", "JeroMax", "aa123"));
-            vendedores.Add(new Vendedor(5, "a", "a", "a"));
+            vendedores.Add(new Vendedor(1, "NahuPazos", "123a", "Nahuel","Pazos",19,45583107));
+            vendedores.Add(new Vendedor(2, "MaxiProfe", "123aa", "Maximiliano","Neiner",32,44583107));
+            vendedores.Add(new Vendedor(2, "FacuProfre", "123aaa", "Facundo", "Rocha", 22, 43583107));
         }
 
         public static bool LoguearVendedor(string usuario, string pass)
@@ -92,11 +90,11 @@ namespace Clase_Parcial
             return resultado;
         }
 
-        public static void ResgistrarEmpleados(string nombre, string usuario, string pass)
+        public static void ResgistrarEmpleados(string nombre, string usuario, string pass,string apellido,int edad,int dni)
         {
             for (int i = 4; i < 100; i++)
             {
-                vendedores.Add(new Vendedor(i, nombre, usuario, pass));
+                vendedores.Add(new Vendedor(i, usuario,pass,nombre,apellido,edad,dni));
             }
         }
 
