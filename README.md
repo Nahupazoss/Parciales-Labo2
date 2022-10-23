@@ -1,5 +1,5 @@
 # Parciales-Labo2
-Parciales del 2do cuatrimestre laboratorio 2 UTN
+Primer parcial Laboratio 2
 
 
 Alumno: Nahuel Rodrigo Pazos                 
