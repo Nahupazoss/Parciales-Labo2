@@ -336,6 +336,7 @@ namespace Primer_Parcial_Labo2
             this.cmbx_matricula.Name = "cmbx_matricula";
             this.cmbx_matricula.Size = new System.Drawing.Size(121, 23);
             this.cmbx_matricula.TabIndex = 35;
+            this.cmbx_matricula.SelectedIndexChanged += new System.EventHandler(this.cmbx_matricula_SelectedIndexChanged);
             // 
             // lbl_precio
             // 

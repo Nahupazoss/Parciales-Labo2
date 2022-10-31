@@ -40,5 +40,10 @@ namespace Clase_Parcial
         {
             return crucero;
         }
+
+        public override string ToString()
+        {
+            return crucero.ToString();
+        }
     }
 }

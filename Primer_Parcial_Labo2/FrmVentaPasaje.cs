@@ -24,7 +24,7 @@ namespace Primer_Parcial_Labo2
             lbl_MensajeError.Visible = false;
             cbx_salida.DataSource = Enum.GetNames(typeof(Origen));
             cbx_viajeA.DataSource = Enum.GetNames(typeof(Destino));
-            cmbx_matricula.DataSource = Sistema.Cruceros;
+            cmbx_matricula.DataSource = Sistema.Viajes;
             lbl_precio.Visible = false;
             //btn_AgregarFamiliar.Visible = false;
         }
@@ -54,6 +54,7 @@ namespace Primer_Parcial_Labo2
             int edad = Convert.ToInt32(txt_Edad.Text);
             int pesoValija = Convert.ToInt32(txt_valija.Text);
             bool esRegional = rbtn_Regional.Checked;
+            Viaje viajes = (Viaje)cmbx_matricula.SelectedItem;
             Cliente nuevoCliente;
 
             if (ValidacionStrings(nomb, apellido, nacionalidad) && dni > 20000000 && dni < 46000000 && edad > 17 && pesoValija > 0)
@@ -63,7 +64,7 @@ namespace Primer_Parcial_Labo2
                 if (clienteaux is not null)
                 {
                     MessageBox.Show($"{nomb} ya es un cliente y se vendio el pasaje!!!");
-                    Sistema.Pasajeros.Add(new Pasajero(clienteaux, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
+                    Sistema.Pasajeros.Add(new Pasajero(clienteaux, pesoValija, Sistema.GeneraSiNoRandom(),viajes));
                     limpiarTxtBox();
                 }
                 else
@@ -71,7 +72,7 @@ namespace Primer_Parcial_Labo2
                     nuevoCliente = new Cliente(nomb, apellido, edad, dni, nacionalidad);
                     Sistema.Clientes.Add(nuevoCliente);
                     MessageBox.Show($"{nomb} es un nuevo cliente!!! y su pasaje se vendio con exito");
-                    Sistema.Pasajeros.Add(new Pasajero(nuevoCliente, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
+                    Sistema.Pasajeros.Add(new Pasajero(nuevoCliente, pesoValija, Sistema.GeneraSiNoRandom(),viajes));
                     limpiarTxtBox();
                 }
             }
@@ -122,6 +123,11 @@ namespace Primer_Parcial_Labo2
         private static bool ValidarSoloLetras(KeyPressEventArgs e)
         {
             return e.KeyChar >= 32 && e.KeyChar <= 64 || e.KeyChar >= 91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255;
+        }
+
+        private void cmbx_matricula_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
