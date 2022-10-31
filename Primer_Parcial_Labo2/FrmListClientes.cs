@@ -33,7 +33,22 @@ namespace Primer_Parcial_Labo2
 
         private void btn_eliminarCliente_Click(object sender, EventArgs e)
         {
-            //dgb_listClientes.Rows.Remove(dgb_listClientes.CurrentRow);
+            if (this.dgb_listClientes.CurrentRow is not null)
+            {
+                DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminar el cliente?", "Eliminación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (respuesta == DialogResult.Yes)
+                {
+                    int aux = dgb_listClientes.CurrentRow.Index;
+                    Sistema.EliminarCliente(aux);
+                    this.dgb_listClientes.DataSource = null;
+                    this.dgb_listClientes.DataSource = Sistema.ObtenerClientes();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No posee ningún cliente cargado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -57,6 +72,7 @@ namespace Primer_Parcial_Labo2
 
         private static void OrdenarSegunRequisito(string ordenamiento)
         {
+
             if (ordenamiento == "EdadMenor")
             {
                 Sistema.OrdenarEdadMenor(Sistema.Clientes);
@@ -71,13 +87,13 @@ namespace Primer_Parcial_Labo2
                 {
                     if (ordenamiento == "Nombre")
                     {
-                        //mostrar.Sort();
+                        //Sistema.Clientes.Sort();
                     }
                     else
                     {
                         if (ordenamiento == "Apellido")
                         {
-
+                            //Sistema.Clientes.Sort();
                         }
                     }
                 }

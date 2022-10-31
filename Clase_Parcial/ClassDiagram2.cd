@@ -11,7 +11,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cliente.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,14 +39,14 @@
   <Class Name="Clase_Parcial.Sistema">
     <Position X="4.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAgRASgIAIAgAAAAAARBAAAAAaAAABAAABAQAEAQAA=</HashCode>
+      <HashCode>AgAgRAagIAIAgAAAAAARBgAAAAaAQABIAABAQAEAQAA=</HashCode>
       <FileName>Sistema.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Clase_Parcial.Validador">
     <Position X="11.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Validador.cs</FileName>
     </TypeIdentifier>
   </Class>

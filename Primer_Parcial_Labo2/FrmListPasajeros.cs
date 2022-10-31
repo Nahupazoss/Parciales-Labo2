@@ -39,5 +39,25 @@ namespace Primer_Parcial_Labo2
                 Hide();
             }
         }
+
+        private void btn_eliminarPasajero_Click(object sender, EventArgs e)
+        {
+            if (this.dgtv_ListPasajareos.CurrentRow is not null)
+            {
+                DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminar el pasajero?", "Eliminación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (respuesta == DialogResult.Yes)
+                {
+                    int aux = dgtv_ListPasajareos.CurrentRow.Index;
+                    Sistema.EliminarPasajero(aux);
+                    this.dgtv_ListPasajareos.DataSource = null;
+                    this.dgtv_ListPasajareos.DataSource = Sistema.ObtenerPasajeros();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No posee ningún pasaje cargado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

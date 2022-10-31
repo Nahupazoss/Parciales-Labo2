@@ -40,6 +40,7 @@ namespace Primer_Parcial_Labo2
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn_eliminarPasajero = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgtv_ListPasajareos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -112,7 +113,7 @@ namespace Primer_Parcial_Labo2
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(917, 9);
@@ -163,12 +164,27 @@ namespace Primer_Parcial_Labo2
             this.pictureBox5.TabIndex = 53;
             this.pictureBox5.TabStop = false;
             // 
+            // btn_eliminarPasajero
+            // 
+            this.btn_eliminarPasajero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_eliminarPasajero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_eliminarPasajero.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_eliminarPasajero.ForeColor = System.Drawing.Color.Black;
+            this.btn_eliminarPasajero.Location = new System.Drawing.Point(754, 76);
+            this.btn_eliminarPasajero.Name = "btn_eliminarPasajero";
+            this.btn_eliminarPasajero.Size = new System.Drawing.Size(127, 23);
+            this.btn_eliminarPasajero.TabIndex = 54;
+            this.btn_eliminarPasajero.Text = "ELIMINAR PASAJERO";
+            this.btn_eliminarPasajero.UseVisualStyleBackColor = false;
+            this.btn_eliminarPasajero.Click += new System.EventHandler(this.btn_eliminarPasajero_Click);
+            // 
             // FrmListPasajeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1014, 625);
+            this.Controls.Add(this.btn_eliminarPasajero);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.dgtv_ListPasajareos);
             this.Controls.Add(this.pictureBox5);
@@ -208,5 +224,6 @@ namespace Primer_Parcial_Labo2
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btn_eliminarPasajero;
     }
 }

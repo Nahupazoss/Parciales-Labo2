@@ -64,6 +64,7 @@ namespace Primer_Parcial_Labo2
                 {
                     MessageBox.Show($"{nomb} ya es un cliente y se vendio el pasaje!!!");
                     Sistema.Pasajeros.Add(new Pasajero(clienteaux, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
+                    limpiarTxtBox();
                 }
                 else
                 {
@@ -71,6 +72,7 @@ namespace Primer_Parcial_Labo2
                     Sistema.Clientes.Add(nuevoCliente);
                     MessageBox.Show($"{nomb} es un nuevo cliente!!! y su pasaje se vendio con exito");
                     Sistema.Pasajeros.Add(new Pasajero(nuevoCliente, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
+                    limpiarTxtBox();
                 }
             }
             else
@@ -103,7 +105,6 @@ namespace Primer_Parcial_Labo2
             }
         }
 
-
         private void txtboxLetras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (ValidarSoloLetras(e))
@@ -121,10 +122,6 @@ namespace Primer_Parcial_Labo2
         private static bool ValidarSoloLetras(KeyPressEventArgs e)
         {
             return e.KeyChar >= 32 && e.KeyChar <= 64 || e.KeyChar >= 91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255;
-        }
-
-        private void btn_AgregarFamiliar_Click(object sender, EventArgs e)
-        {
         }
     }
 }

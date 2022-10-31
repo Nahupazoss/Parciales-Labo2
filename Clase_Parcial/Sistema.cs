@@ -172,5 +172,64 @@ namespace Clase_Parcial
 
             return (random.Next(800, 1200) * Sistema.Viajes.Count);
         }
+
+        public static void EliminarCliente(int dniCliente)
+        {
+            clientes.RemoveAt(dniCliente);
+        }
+
+        public static void EliminarViaje(int horas)
+        {
+            viajes.RemoveAt(horas);
+        }
+
+        public static void EliminarPasajero(int dniPasajero)
+        {
+            pasajeros.RemoveAt(dniPasajero);
+        }
+
+        public static List<Viaje> ObtenerViaje()
+        {
+            return viajes;
+        }
+
+        public static List<Cliente> ObtenerClientes()
+        {
+            return clientes;
+        }
+
+        public static List<Pasajero> ObtenerPasajeros()
+        {
+            return pasajeros;
+        }
+
+
+       /* public static bool AgregarClientePasajero(string nomb,string apellido,int edad,int dni,string nacionalidad,int pesoValija)
+        {
+            Cliente nuevoCliente = null;
+            Cliente clienteaux = null;
+            bool retorno = false;
+
+            if(Validador.ValidacionStrings(nomb, apellido, nacionalidad) && dni > 20000000 && dni < 46000000 && edad > 17 && pesoValija > 0)
+            {
+                clienteaux = Sistema.BuscarClientePorDni(dni);
+
+                if (clienteaux is not null)
+                {                  
+                    Sistema.Pasajeros.Add(new Pasajero(clienteaux, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
+                    retorno = true;
+                }
+                else
+                {                
+                    nuevoCliente = new Cliente(nomb, apellido, edad, dni, nacionalidad);
+                    Sistema.Clientes.Add(nuevoCliente);
+                    Sistema.Pasajeros.Add(new Pasajero(nuevoCliente, pesoValija, Sistema.GeneraSiNoRandom(), Sistema.Viajes[0]));
+                    retorno = true;
+                }
+            }
+
+            return retorno;
+        }*/
+
     }
 }

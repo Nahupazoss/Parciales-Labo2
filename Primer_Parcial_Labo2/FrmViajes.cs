@@ -56,13 +56,22 @@ namespace Primer_Parcial_Labo2
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //int index = dtgv_ListaViajes.CurrentRow.Index;
-            //Crucero aCrucero = Sistema.Cruceros[index];
-
-            /*oreach (Sistema crucero in )
+            if (this.dtgv_ListaViajes.CurrentRow is not null)
             {
+                DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminar el viaje?", "Eliminación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
-            }*/
+                if (respuesta == DialogResult.Yes)
+                {
+                    int aux = dtgv_ListaViajes.CurrentRow.Index;
+                    Sistema.EliminarViaje(aux);
+                    this.dtgv_ListaViajes.DataSource = null;
+                    this.dtgv_ListaViajes.DataSource = Sistema.ObtenerViaje();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No posee ningún viaje cargado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

@@ -98,6 +98,7 @@ namespace Primer_Parcial_Labo2
             // 
             this.btn_eliminarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btn_eliminarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_eliminarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_eliminarCliente.ForeColor = System.Drawing.Color.Black;
             this.btn_eliminarCliente.Location = new System.Drawing.Point(310, 67);
             this.btn_eliminarCliente.Name = "btn_eliminarCliente";

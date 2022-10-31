@@ -86,7 +86,7 @@ namespace Primer_Parcial_Labo2
 
             if(opcion == DialogResult.Yes)
             {
-                Close();
+                Application.Exit();
             }
 
         }
