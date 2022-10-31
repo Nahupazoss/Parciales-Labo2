@@ -7,7 +7,7 @@ Profesor: Maximiliano Neiner
 Curso: 2A
 
 
-![image](https://user-images.githubusercontent.com/98673588/197371930-6ea6537b-369c-4995-8bd2-0bdd58e8e667.png)
+![image](https://user-images.githubusercontent.com/98673588/199081249-a393812f-ac56-4f1c-9f14-25cf1f64bb14.png)
 
 
 Bueno en mi parcial hice una aplicacion de cruceros el cual permite realizar la venta de un pasaje , cargar ese cliente a la lista de clientes y a su vez vender el pasaje cargando ese cliente a la lista de pasajeros, en caso de que ese cliente ya este registrado porque ha comprado anteriormente un pasaje o porque simplemente ya estaba cargado en el sistema, este a la hora de vender el pasaje solo sera agregado a la lista de pasajeros.
